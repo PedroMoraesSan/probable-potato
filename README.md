@@ -43,12 +43,12 @@ An AI-powered search engine with a generative UI.
 
 The following AI providers are supported:
 
-- OpenAI (Default)
+- Groq (Default)
+- OpenAI
 - Google Generative AI
 - Azure OpenAI
 - Anthropic
 - Ollama
-- Groq
 - DeepSeek
 - Fireworks
 - xAI (Grok)
@@ -86,7 +86,7 @@ Models are configured in `public/config/models.json`. Each model requires its co
 
 ### AI & Search
 
-- [OpenAI](https://openai.com/) - Default AI provider (Optional: Google AI, Anthropic, Groq, Ollama, Azure OpenAI, DeepSeek, Fireworks)
+- [Groq](https://groq.com/) - Default AI provider (Optional: OpenAI, Google AI, Anthropic, Ollama, Azure OpenAI, DeepSeek, Fireworks)
 - [Tavily AI](https://tavily.com/) - Default search provider
 - Alternative providers:
   - [SearXNG](https://docs.searxng.org/) - Self-hosted search
@@ -131,7 +131,7 @@ Fill in the required environment variables in `.env.local`:
 
 ```bash
 # Required for Core Functionality
-OPENAI_API_KEY=     # Get from https://platform.openai.com/api-keys
+GROQ_API_KEY=       # Get from https://console.groq.com/keys
 TAVILY_API_KEY=     # Get from https://app.tavily.com/home
 ```
 
@@ -159,7 +159,7 @@ Host your own live version of Morphic with Vercel, Cloudflare Pages, or Docker.
 
 ### Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmiurla%2Fmorphic&env=OPENAI_API_KEY,TAVILY_API_KEY,UPSTASH_REDIS_REST_URL,UPSTASH_REDIS_REST_TOKEN)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmiurla%2Fmorphic&env=GROQ_API_KEY,TAVILY_API_KEY,UPSTASH_REDIS_REST_URL,UPSTASH_REDIS_REST_TOKEN)
 
 ### Docker Prebuilt Image
 

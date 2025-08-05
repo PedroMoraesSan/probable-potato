@@ -68,7 +68,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### Required Variables
 
 ```bash
-OPENAI_API_KEY=      # Default AI provider
+GROQ_API_KEY=        # Default AI provider
 TAVILY_API_KEY=      # Default search provider
 ```
 
